@@ -1,3 +1,6 @@
+# All vector representation using np
+# Function was used
+
 import matplotlib.pyplot as plt
 import numpy as np
 
