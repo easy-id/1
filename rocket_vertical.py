@@ -17,6 +17,8 @@ V = [v0]
 Z = [z]
 while fuelMass >0:
     fuelMass += -alpha*dt
+    if fuelMass < 0:
+        fuelMass = 0
     a = -g + meanThrust/(rocketMass+fuelMass)
     v += a * dt
     z += v * dt
